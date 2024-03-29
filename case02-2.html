@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加油优惠价格计算</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var number = prompt ("请输入汽油编号");
+        var liters = prompt ("请输入你要加多少升");
+        if (number = "92"){
+        if(liters >= 20) {
+        document.write('汽油5.9元一升;'+'<br/>'+'共计：'+(5.9*liters)+'元');
+        }
+        else {
+        document. write('汽油6元一升;'+'<br/>'+'共计：'+(6*liters)+'元');
+        }
+    }
+        else if (number = "97") {
+        if(liters >= 40){
+        document.write('汽油6.5元一升;'+'<br/>'+'共计：'+(6.5*liters)+'元');
+        }
+        else {
+        document.write('汽油7元一升;'+'<br/>'+'共计：'+(7*liters)+'元');
+        }
+    }
+    else {
+        alert ("您输入的汽油我没见过") ;
+    }
+</script>
+</body>
+</html>
