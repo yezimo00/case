@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>求红白黑球的个数</title>
+</head>
+<body>
+    <script type="text/javascript">
+        for(var white=0;white <= 31;white++)
+        {
+            var red = 25 - white,black = 31 - white;
+            if(28 == red + black)
+            {
+            alert('红球:'+red+'\n'+'白球:'+white+'\n'+'黑球:'+black);
+            }
+        }
+    </script>
+</body>
+</html>

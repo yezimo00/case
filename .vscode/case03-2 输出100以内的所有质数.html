@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>输出100以内的所有质数</title>
+	</head>
+	<body>
+		<script type="text/javascript"> 
+		for(var n = 2; n <= 100; n++){
+			for(var m = 2; m <= n-1 ; m++ ){
+				if(n % m == 0){
+					break;
+				}
+			}
+			if(m == n){
+				document.write(m + '、');
+			}
+		}
+		</script>
+	</body>
+</html>

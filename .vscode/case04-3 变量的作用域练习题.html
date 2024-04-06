@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量的作用域练习题</title>
+    <script>      
+        var name = "a"; 
+        console.log(name); 
+        function f2 () {
+        console.log(name); 
+        }
+        f2(); 
+        
+        function f1(){
+            var a;          
+            a = b = c = 9;
+            console.log('a'+a); 
+            console.log('b'+b); 
+            console.log('c'+c); 
+        }
+        f1();
+        console.log('cc'+c); 
+        console.log('bb'+b); 
+        console.log('aa'+a); 
+    </script>
+</head>
+</html>

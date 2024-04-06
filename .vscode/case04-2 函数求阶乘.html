@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数求阶乘</title>
+</head>
+<body>
+    <script>
+        function getJC(n) {
+            var num = 1;
+            for (var i = 2; i <= n; i++) {
+                num *= i;
+            }
+            return num;
+        }
+        console.log('3的阶乘是'+getJC(3)); 
+        function getSum(n) {
+            var sum = 0;
+            for (var i = 1; i <= n; i++) {
+                sum += getJC(i);
+            }
+            return sum;
+        }
+        console.log('3的阶乘累加和是'+getSum(3)); 
+    </script>
+</body>
+</html>
