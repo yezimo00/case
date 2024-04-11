@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>判断一个数是否是素数</title> 
+</head>
+<body>
+    <script>
+    function isZhiShu (n) {
+        var isZS = true;
+        for (var i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                isZS = false;
+            }
+        }
+        return isZS;
+    }
+    console.log('9:'+isZhiShu(9)); 
+    console.log('7:'+isZhiShu(7)); 
+    </script>
+</body>
+</html>

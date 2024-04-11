@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>比较最大值</title>
+</head>
+<body>
+<script>
+function getMax(n1, n2) {
+    n1 = n1 || 0;
+    n2 = n2 || 0;
+    if (n1 > n2) {
+        return n1;
+    }else{
+        return n2;
+    }
+    return n1 > n2 ? n1 : n2;
+        }
+        console.log('6.98和6.99相比')
+        console.log(getMax(6.98,6.99)+'最大');
+        function getMax1(a,b,c) {
+            return (a > b ? a : b) > c ? (a > b ? a : b) : c;
+        }
+        console.log('40、70、10相比')
+        console.log(getMax1(40,70,10)+'最大');
+        </script>
+</body>
+</html>
